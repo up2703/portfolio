@@ -15,10 +15,11 @@ jobs:
     runs-on: ubuntu-latest
     name: Build and Deploy Job
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v3 ### Added this line
         with:
           submodules: true
-          lfs: false
+          node-version: 16 ### Added this line
       - name: Build And Deploy
         id: builddeploy
         uses: Azure/static-web-apps-deploy@v1
