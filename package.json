@@ -17,8 +17,8 @@
   "author": "Melinda Golden",
   "license": "MIT",
   "dependencies": {
-    "express": "^4.16.4",
-    "pug": "^2.0.3"
+    "express": "^4.18.2",
+    "pug": "^3.0.2"
   },
   "devDependencies": {
     "nodemon": "^1.18.7"
