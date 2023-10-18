@@ -1,0 +1,22 @@
+extends layout.pug
+
+block content 
+  nav.grid-container.portfolio-breadcrumb
+    a(href='/') ← Back
+    .grid-x
+    .cell.small-12.medium-9.large-9
+    br
+    br
+    body
+    h1 Contact Us
+    form(method='POST')
+        div
+            label(for='name') Name:
+            input(type='text', id='name', name='name', required)
+        div
+            label(for='email') Email:
+            input(type='email', id='email', name='email', required)
+        div
+            label(for='message') Message:
+            textarea(id='message', name='message', required)
+        button(type='submit') Submit

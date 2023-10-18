@@ -3,6 +3,7 @@ const express = require('express');
 const indexRoutes = require('./routes');
 const aboutRoutes = require('./routes/about');
 const projectRoutes = require('./routes/project');
+const contactRoutes = require('./routes/contact');
 
 // Port
 const port = process.env.PORT || 3000;
@@ -20,6 +21,8 @@ app.use('/static', express.static('public'));
 app.use(indexRoutes);
 app.use('/about', aboutRoutes);
 app.use('/project', projectRoutes);
+app.use('/contact', contactRoutes);
+
 
 // Handle errors
 app.use((req, res, next) => {
